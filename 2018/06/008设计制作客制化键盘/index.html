@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        DIY自己专属的键盘 - 雪落霞初
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="前言 工欲善其事，必先利其器。在雪落刚上大学的时候正好赶上机械键盘的热潮，当时机械键盘刚刚兴起，价格也相对昂贵，基本上在一个轴一块的水平。当时" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>DIY自己专属的键盘 - 雪落霞初</title>
+  
+
+  <link rel="stylesheet" href="http:///mechmallow.github.io/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
+  <meta property="og:title" content="DIY自己专属的键盘" />
+<meta property="og:description" content="前言 工欲善其事，必先利其器。在雪落刚上大学的时候正好赶上机械键盘的热潮，当时机械键盘刚刚兴起，价格也相对昂贵，基本上在一个轴一块的水平。当时" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http:///mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/" />
+<meta property="article:published_time" content="2018-06-13T01:34:25+08:00" />
+<meta property="article:modified_time" content="2018-06-13T01:34:25+08:00" />
+<meta itemprop="name" content="DIY自己专属的键盘">
+<meta itemprop="description" content="前言 工欲善其事，必先利其器。在雪落刚上大学的时候正好赶上机械键盘的热潮，当时机械键盘刚刚兴起，价格也相对昂贵，基本上在一个轴一块的水平。当时">
+
+
+<meta itemprop="datePublished" content="2018-06-13T01:34:25&#43;08:00" />
+<meta itemprop="dateModified" content="2018-06-13T01:34:25&#43;08:00" />
+<meta itemprop="wordCount" content="1291">
+
+
+
+<meta itemprop="keywords" content="键盘," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DIY自己专属的键盘"/>
+<meta name="twitter:description" content="前言 工欲善其事，必先利其器。在雪落刚上大学的时候正好赶上机械键盘的热潮，当时机械键盘刚刚兴起，价格也相对昂贵，基本上在一个轴一块的水平。当时"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  
+
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/Mechmallow" target="_blank">
+            <img class="img-circle img-rotate" src="http:///mechmallow.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">雪落霞初</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">一个兴趣使然的小站</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Jiangsu, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/mechmallow.github.io/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">首页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/mechmallow.github.io/posts">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/mechmallow.github.io/categories">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/mechmallow.github.io/tags">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/mechmallow.github.io/about">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>技术随笔，凑合看吧</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="http:///mechmallow.github.io/categories/3d%E6%89%93%E5%8D%B0/" class="category-list-link">3d打印</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="http:///mechmallow.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="category-list-link">博客搭建</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http:///mechmallow.github.io/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/" class="category-list-link">瞎折腾</a><span class="category-list-count">3</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="http:///mechmallow.github.io/tags/3d%E6%89%93%E5%8D%B0/" class="tag-list-link">3d打印</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http:///mechmallow.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http:///mechmallow.github.io/tags/nfc/" class="tag-list-link">nfc</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http:///mechmallow.github.io/tags/%E9%94%AE%E7%9B%98/" class="tag-list-link">键盘</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http:///mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/" class="title">DIY自己专属的键盘</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2018-06-13 01:34:25 &#43;0800 CST" itemprop="datePublished">2018-06-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http:///mechmallow.github.io/2018/03/007m1%E5%8A%A0%E5%AF%86%E5%8D%A1%E7%A0%B4%E8%A7%A3/" class="title">深入了解M1加密卡</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2018-03-03 04:12:15 &#43;0800 CST" itemprop="datePublished">2018-03-03</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http:///mechmallow.github.io/2017/12/006nfc-m1/" class="title">手机NFC与M1卡折腾记录</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2017-12-18 02:08:44 &#43;0800 CST" itemprop="datePublished">2017-12-18</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http:///mechmallow.github.io/2017/02/003%E5%B8%B8%E8%A7%813d%E6%89%93%E5%8D%B0%E8%80%97%E6%9D%90/" class="title">常见3D打印耗材</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2017-02-06 03:03:34 &#43;0800 CST" itemprop="datePublished">2017-02-06</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http:///mechmallow.github.io/2016/11/002%E4%B8%BB%E6%B5%813d%E6%89%93%E5%8D%B0%E6%9C%BA%E7%BB%93%E6%9E%84/" class="title">主流3D打印机结构</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2016-11-21 03:02:30 &#43;0800 CST" itemprop="datePublished">2016-11-21</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#什么是客制化">什么是客制化</a></li>
+<li><a href="#为什么选择xd75">为什么选择XD75</a></li>
+<li><a href="#使用体验">使用体验</a></li>
+</ul>
+</nav>
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/"
+    >DIY自己专属的键盘</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="http:///mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/" class="article-date">
+  <time datetime="2018-06-13 01:34:25 &#43;0800 CST" itemprop="datePublished">2018-06-13</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/mechmallow.github.io/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"> 瞎折腾 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/mechmallow.github.io/tags/%E9%94%AE%E7%9B%98/"> 键盘 </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:1291字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<h1 id="前言">前言</h1>
+
+<p>工欲善其事，必先利其器。在雪落刚上大学的时候正好赶上机械键盘的热潮，当时机械键盘刚刚兴起，价格也相对昂贵，基本上在一个轴一块的水平。当时由于囊中羞涩，不得不成为垃圾佬，经常上一些垃圾车拆轴或是修复主板后使用，因此积累了一些小小的经验。后来因为参加比赛手头逐渐宽裕，入了客制化键盘的大坑。入坑后经过漫长的纠结最后选择了XD75作为主力键盘，经过一晚的组装之后这块键盘一直陪我到今天。</p>
+
+<h1 id="什么是客制化">什么是客制化</h1>
+
+<p>按照百度百科的说法
+&gt; 客制化（customize），就是“定制化”的另一种翻译，相当于“自定义”。客制化词源于港台，大陆不经常使用。
+&gt; &ldquo;客制化&rdquo;——个性化的一种服务；customize (v.)/customization (n.)；英文简写：UDM
+&gt;    表示根据客户的需求进行特别的定制，以满足其需要。针对顾客的需求,对一个标准的产品进行改变、用新的部件替换标准的部件、或是在一个标准产品中加入特殊的功能，提供顾客一个更完整的产品组合。简单的说，就是客户需要怎么样 厂家商家就怎么样生产制造。
+通俗来讲，客制化有点像是“私人定制”，可能是出于习惯原因才导致键圈使用客制化这一称呼。<br />
+落实到键盘上，客制化指的是自行选键盘的每个部分的配件自行组装，类似于DIY电脑。键盘整体也分为键帽、轴、PCB和外壳几大部分，而最核心的部件就是PCB了，决定了键盘的大小以及整体布局。<br />
+我们日常见到的键盘大多是全尺寸104键，但是使用中顶部F功能区、小键盘以及方向键上方9键使用频率较低，去掉这些之后就是客制化领域最常见的60%尺寸，兼具了实用性、美观性以及便携性。除此以外还有精简了数字键的40%，以及介于60%和104之间的80%，相对比较少见。</p>
+
+<h1 id="为什么选择xd75">为什么选择XD75</h1>
+
+<p>键盘源自机械式打字机，为了避免机械结构卡死引入了很多反人类设计，例如互相错开的键位以及QWERTY排列。QWERTY涉及到使用习惯已经很难更改了，但是错层排列完全可以得到纠正，键盘本就应该排列的整整齐齐，这就是Planck配列。而XD75，就是极其少见的引入了Planck配列的60%键盘。
+Planck配列的最大优势就是好看，键帽工工整整的码在键盘上，横平竖直，赏心悦目。除此以外，Planck配列在键位设置上有很大的自由度，搭配2x的DSA键帽，可以随心所欲的布置大键的位置，无需卫星轴。</p>
+
+<h1 id="使用体验">使用体验</h1>
+
+<p>由于Planck配列相对紧凑，因此相较于普通的60%键盘可以塞进更多的键，尤其是delete和方向键，使用起来残缺感相对不那么明显。除此以外，得益于Planck配列规整的排列，涉及到大量数字输入时可以切换到其他层的小键盘，可以很好还原小键盘区的输入体验。
+在良好输入体验的基础上，XD75的游戏体验也极为优秀。整整齐齐的WASD明显比错位的WASD更为自然，同时与数字区的互动也更为精准，这对于FPS游戏而言是很明显的提升（妈妈再也不用担心我切错枪了）。
+总而言之，当拥有一把完全符合自己习惯的客制化键盘之后，切换回正常的键盘就成为了一件很痛苦的事情。而这正是一件优秀的产品所具有的特质，使用它时并没有多么惊艳的感觉，而当你失去它时，才会意识到它的种种优点。
+<strong>完结撒花！</strong></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="http:///mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/" title="DIY自己专属的键盘" target="_blank" rel="external">http:///mechmallow.github.io/2018/06/008%E8%AE%BE%E8%AE%A1%E5%88%B6%E4%BD%9C%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Mechmallow" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="http:///mechmallow.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Mechmallow" target="_blank"><span class="text-dark">雪落霞初</span><small class="ml-1x">一个兴趣使然的小站</small></a></h3>
+        <div>不太有趣，不太乐观</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="http:///mechmallow.github.io/2018/03/007m1%E5%8A%A0%E5%AF%86%E5%8D%A1%E7%A0%B4%E8%A7%A3/" title="深入了解M1加密卡"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="http:///mechmallow.github.io/about/"
+                    title="About"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        
+        <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal"
+            data-target="#donateModal"><span>赏</span></button>
+        
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content donate">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+                <div class="donate-box">
+                    <div class="donate-head">
+                        <p>感谢您的支持,我会继续努力的!</p>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+                            <div class="donate-payimg">
+                                <img src="http:///mechmallow.github.io/donate/alipayimg.png"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦~</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+                            <div class="donate-payimg">
+                                <img src="http:///mechmallow.github.io/donate/wechatpayimg.png"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+                        </div>
+                    </div>
+                    <div class="donate-footer">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay"
+                                    aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab"
+                                    aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i>
+                                    微信支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/Mechmallow" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="http:///index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2015  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="http:///mechmallow.github.io/js/application.js"></script>
+<script type="text/javascript" src="http:///mechmallow.github.io/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'http:\/\/\/mechmallow.github.io\/',
+              CONTENT_URL: 'http:\/\/\/mechmallow.github.io\/\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="http:///mechmallow.github.io/js/insight.js"></script>
+
+
+  </body>
+</html>
