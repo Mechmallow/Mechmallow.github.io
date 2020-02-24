@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        雪落霞初</title>
+        Arduino回顾————基础篇 - 雪落霞初
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,26 +23,33 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="前言 身为一个机械工程专业的学生，参赛时花时间最长的却是嵌入式的开发。而学习了微机原理之后，越加感受到Arduino开发的快捷和高效，因此决定" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>雪落霞初</title>
+  <title>Arduino回顾————基础篇 - 雪落霞初</title>
   
 
-  <link rel="alternate" type="application/rss+xml" href="http:///mechmallow.github.io/tags/hugo/index.xml" title="雪落霞初" />
   <link rel="stylesheet" href="http:///mechmallow.github.io/css/style.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
-  <meta property="og:title" content="hugo" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http:///mechmallow.github.io/tags/hugo/" />
+  <meta property="og:title" content="Arduino回顾————基础篇" />
+<meta property="og:description" content="前言 身为一个机械工程专业的学生，参赛时花时间最长的却是嵌入式的开发。而学习了微机原理之后，越加感受到Arduino开发的快捷和高效，因此决定" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http:///mechmallow.github.io/2017/05/004arduino%E6%80%BB%E7%BB%93/" />
+<meta property="article:published_time" content="2017-05-12T03:03:34+08:00" />
+<meta property="article:modified_time" content="2017-05-12T03:03:34+08:00" />
+<meta itemprop="name" content="Arduino回顾————基础篇">
+<meta itemprop="description" content="前言 身为一个机械工程专业的学生，参赛时花时间最长的却是嵌入式的开发。而学习了微机原理之后，越加感受到Arduino开发的快捷和高效，因此决定">
 
-<meta property="og:updated_time" content="2016-09-02T03:03:34+08:00" />
-<meta itemprop="name" content="hugo">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2017-05-12T03:03:34&#43;08:00" />
+<meta itemprop="dateModified" content="2017-05-12T03:03:34&#43;08:00" />
+<meta itemprop="wordCount" content="640">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="hugo"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Arduino回顾————基础篇"/>
+<meta name="twitter:description" content="前言 身为一个机械工程专业的学生，参赛时花时间最长的却是嵌入式的开发。而学习了微机原理之后，越加感受到Arduino开发的快捷和高效，因此决定"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -249,41 +257,195 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">hugo</h1>
-            <p class="text-muted hidden-xs">共 5 个标签</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="http:///mechmallow.github.io/tags">All</a></li>
-                    <li><a href="http:///mechmallow.github.io/tags/3d%E6%89%93%E5%8D%B0/">3D打印</a></li>
-                    <li><a href="http:///mechmallow.github.io/tags/hugo/">hugo</a></li>
-                    <li><a href="http:///mechmallow.github.io/tags/nfc/">NFC</a></li>
-                    <li><a href="http:///mechmallow.github.io/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a></li>
-                    <li><a href="http:///mechmallow.github.io/tags/%E9%94%AE%E7%9B%98/">键盘</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2016-09-02 03:03:34 &#43;0800 CST"
-                itemprop="datePublished">2016-09-02</time>
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#前置知识">前置知识</a></li>
+<li><a href="#硬件接口">硬件接口</a>
+<ul>
+<li><a href="#输入模式">输入模式</a></li>
+<li><a href="#输出模式">输出模式</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="http:///mechmallow.github.io/2016/09/000%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用Hugo快速搭建博客</a>
-        </h3>
+      </nav>
     </div>
-    <div class="panel-footer">
-        <a href="http:///mechmallow.github.io/tags/hugo" class="label label-default mb">hugo</a>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/mechmallow.github.io/2017/05/004arduino%E6%80%BB%E7%BB%93/"
+    >Arduino回顾————基础篇</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="http:///mechmallow.github.io/2017/05/004arduino%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2017-05-12 03:03:34 &#43;0800 CST" itemprop="datePublished">2017-05-12</time>
+</a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/mechmallow.github.io/2017/05/004arduino%E6%80%BB%E7%BB%93/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:640字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:2分 </span>
+      </div>
     </div>
-</article>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<h1 id="前言">前言</h1>
+
+<p>身为一个机械工程专业的学生，参赛时花时间最长的却是嵌入式的开发。而学习了微机原理之后，越加感受到Arduino开发的快捷和高效，因此决定整理一下Arduino的各种用法，便于以后查阅同时也当作学习总结。<br />
+这一篇是基础篇，主要总结一下一些基础的输入输出以及库的调用。</p>
+
+<h1 id="前置知识">前置知识</h1>
+
+<p>Arduino有官方IDE，其默认语言是C++，支持面向对象，但是，诸如iostream这类的库并不具备。Arduino本质上是一个黑盒，直接通过函数调用硬件接口，易于入门且开发快速而高效；不过Arduino IDE同样支持面向寄存器的开发以及汇编，即使是对时序要求比较严格的项目也不在话下（不过既然都面向寄存器了干嘛不用STM32）。<br />
+对于初学者而言，学习Arduino所需要的掌握的就是C++，学过函数、数组之类的就够用了，指针什么的不会也没关系。但是指针可以优化运算过程，降低CPU以及IO的开销。</p>
+
+<h1 id="硬件接口">硬件接口</h1>
+
+<p>Arduino可以通过内置函数直接操作硬件接口，所谓的硬件接口就是引脚（Pin）。<br />
+既然是接口势必有输入和输出，输入和输出使用pinMode()函数指定，函数参数为INPUT/OUTPUT，均为大写，小写会报错。<br />
+通常情况下引脚模式在初始化过程中指定，运行过程中一般不会更改引脚模式。</p>
+
+<h2 id="输入模式">输入模式</h2>
+
+<p>输入模式用于接收传感器信息，模拟接口可以直接读取电压值，数字接口读取电平高低。详情请参考传感器给出的开发手册及资料。</p>
+
+<h2 id="输出模式">输出模式</h2>
+
+<p>输出模式通常用于控制执行器，例如继电器，舵机和步进电机等。同样参考开发手册，不做赘述。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="http:///mechmallow.github.io/2017/05/004arduino%E6%80%BB%E7%BB%93/" title="Arduino回顾————基础篇" target="_blank" rel="external">http:///mechmallow.github.io/2017/05/004arduino%E6%80%BB%E7%BB%93/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Mechmallow" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="http:///mechmallow.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Mechmallow" target="_blank"><span class="text-dark">雪落霞初</span><small class="ml-1x">一个兴趣使然的小站</small></a></h3>
+        <div>不太有趣，不太乐观</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="http:///mechmallow.github.io/2017/02/003%E5%B8%B8%E8%A7%813d%E6%89%93%E5%8D%B0%E8%80%97%E6%9D%90/" title="常见3D打印耗材"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="http:///mechmallow.github.io/2017/10/005%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"
+                    title="滤波算法汇总"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        
+        <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal"
+            data-target="#donateModal"><span>赏</span></button>
+        
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content donate">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+                <div class="donate-box">
+                    <div class="donate-head">
+                        <p>感谢您的支持,我会继续努力的!</p>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+                            <div class="donate-payimg">
+                                <img src="http:///mechmallow.github.io/donate/alipayimg.png"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦~</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+                            <div class="donate-payimg">
+                                <img src="http:///mechmallow.github.io/donate/wechatpayimg.png"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+                        </div>
+                    </div>
+                    <div class="donate-footer">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay"
+                                    aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab"
+                                    aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i>
+                                    微信支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </article>
+    </div>
+</div>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/Mechmallow" target="_blank" title="github" data-toggle=tooltip data-placement=top >
