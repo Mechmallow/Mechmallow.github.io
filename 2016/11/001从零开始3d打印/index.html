@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        3D打印技术简介 - 雪落霞初
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="前言 前段时间组了一台3D打印机。意外的发现尽管3D打印已经吹了这么多年，大多数人（即使是创客）对它也鲜有清晰的概念和认知。所以随手写这么一篇" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>3D打印技术简介 - 雪落霞初</title>
+  
+
+  <link rel="stylesheet" href="https://mechmallow.github.io/mechmallow/css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css">
+  <meta property="og:title" content="3D打印技术简介" />
+<meta property="og:description" content="前言 前段时间组了一台3D打印机。意外的发现尽管3D打印已经吹了这么多年，大多数人（即使是创客）对它也鲜有清晰的概念和认知。所以随手写这么一篇" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mechmallow.github.io/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/" />
+<meta property="article:published_time" content="2016-11-11T17:09:05+08:00" />
+<meta property="article:modified_time" content="2016-11-11T17:09:05+08:00" />
+<meta itemprop="name" content="3D打印技术简介">
+<meta itemprop="description" content="前言 前段时间组了一台3D打印机。意外的发现尽管3D打印已经吹了这么多年，大多数人（即使是创客）对它也鲜有清晰的概念和认知。所以随手写这么一篇">
+
+
+<meta itemprop="datePublished" content="2016-11-11T17:09:05&#43;08:00" />
+<meta itemprop="dateModified" content="2016-11-11T17:09:05&#43;08:00" />
+<meta itemprop="wordCount" content="2326">
+
+
+
+<meta itemprop="keywords" content="3D打印," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="3D打印技术简介"/>
+<meta name="twitter:description" content="前言 前段时间组了一台3D打印机。意外的发现尽管3D打印已经吹了这么多年，大多数人（即使是创客）对它也鲜有清晰的概念和认知。所以随手写这么一篇"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+  
+
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/Mechmallow" target="_blank">
+            <img class="img-circle img-rotate" src="https://mechmallow.github.io/mechmallow/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">雪落霞初</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">祝大家摸得透彻</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Jiangsu, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/mechmallow/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">首页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/mechmallow/posts">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/mechmallow/categories">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/mechmallow/tags">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/mechmallow/about">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>技术随笔，凑合看吧</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://mechmallow.github.io/mechmallow/categories/3d%E6%89%93%E5%8D%B0/" class="category-list-link">3d打印</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://mechmallow.github.io/mechmallow/categories/website/" class="category-list-link">website</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://mechmallow.github.io/mechmallow/categories/%E5%BF%83%E7%90%86/" class="category-list-link">心理</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://mechmallow.github.io/mechmallow/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/" class="category-list-link">瞎折腾</a><span class="category-list-count">8</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/3d%E6%89%93%E5%8D%B0/" class="tag-list-link">3d打印</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/geek/" class="tag-list-link">geek</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/nfc/" class="tag-list-link">nfc</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/%E4%BA%BA%E7%94%9F%E8%BF%B7%E6%80%9D/" class="tag-list-link">人生迷思</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" class="tag-list-link">效率工具</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/%E7%AE%97%E6%B3%95/" class="tag-list-link">算法</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://mechmallow.github.io/mechmallow/tags/%E9%94%AE%E7%9B%98/" class="tag-list-link">键盘</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://mechmallow.github.io/mechmallow/2020/03/015geek%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/" class="title">Geek网站推荐</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-17 15:53:30 &#43;0800 CST" itemprop="datePublished">2020-03-17</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://mechmallow.github.io/mechmallow/2020/02/013%E5%AE%9E%E7%94%A8%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" class="title">在线/轻量级工具推荐【不定期更新】</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-13 01:22:35 &#43;0800 CST" itemprop="datePublished">2020-02-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://mechmallow.github.io/mechmallow/2019/11/012diy%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/" class="title">DIY自己专属的键盘</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-13 01:34:25 &#43;0800 CST" itemprop="datePublished">2019-11-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://mechmallow.github.io/mechmallow/2019/07/011%E6%96%AF%E9%87%91%E7%BA%B3%E8%80%81%E9%BC%A0%E7%90%86%E8%AE%BA/" class="title">抽卡沉船引起的一些思考</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-07-15 02:33:44 &#43;0800 CST" itemprop="datePublished">2019-07-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://mechmallow.github.io/mechmallow/2018/10/010magisk%E6%95%99%E7%A8%8B%E5%90%88%E9%9B%86/" class="title">Magisk从入坑到变砖</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2018-10-13 02:33:44 &#43;0800 CST" itemprop="datePublished">2018-10-13</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+    <div class="slimContent">
+      <nav id="toc" class="article-toc">
+        <h3 class="toc-title">文章目录</h3>
+        <div class="toc-content always-active"><nav id="TableOfContents">
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#什么是3d打印技术">什么是3D打印技术？</a></li>
+<li><a href="#3d打印是不是什么都能打">3D打印是不是什么都能打？</a></li>
+<li><a href="#怎么实现3d打印">怎么实现3D打印？</a></li>
+<li><a href="#结语">结语</a></li>
+</ul>
+</nav>
+        </div>
+      </nav>
+    </div>
+  </aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/"
+    >3D打印技术简介</a
+  >
+</h1>
+
+      <div class="article-meta">
+        <span class="article-date">
+  <i class="icon icon-calendar-check"></i>
+<a href="https://mechmallow.github.io/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/" class="article-date">
+  <time datetime="2016-11-11 17:09:05 &#43;0800 CST" itemprop="datePublished">2016-11-11</time>
+</a>
+</span><span class="article-category">
+  <i class="icon icon-folder"></i>
+  <a class="article-category-link" href="/mechmallow/categories/3d%E6%89%93%E5%8D%B0/"> 3D打印 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+    <a class="article-tag-link" href="/mechmallow/tags/3d%E6%89%93%E5%8D%B0/"> 3D打印 </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计:2326字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长:5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+
+<h1 id="前言">前言</h1>
+
+<p>前段时间组了一台3D打印机。意外的发现尽管3D打印已经吹了这么多年，大多数人（即使是创客）对它也鲜有清晰的概念和认知。所以随手写这么一篇水文科普一下。毕竟咱不是文科出身，文笔不好多多包涵。</p>
+
+<h1 id="什么是3d打印技术">什么是3D打印技术？</h1>
+
+<p>随着近几年（十几年？）媒体和业界的大力吹捧，3D打印这一技术被冠以无数的光环和美誉。什么“第三次工业革命的标志啦”“颠覆性的制造技术啦”“工业4.0时代最具发展前景的制造技术之一啦”“高端装备制造行业的关键环节啦”，乍一听挺牛逼挺唬人的，可是说到底，只是和传统工业的“车铣刨磨”相类似的一种制造技术罢了，没必要神化。</p>
+
+<p>言归正传,3D打印技术是一种通过逐层堆积的方式来构造物体的快速成型制造技术，也是增材制造技术的主要表现方式。前半句似乎不太好懂，先来看后半句的“增材制造”。顾名思义，是通过增加材料实现制造的一种方式，就像堆雪人一样，把雪这一材料堆积在一起从而制造出雪人。增材的对立面自然是减材，就是从整块的物料上以车铣刨磨等各种方式减掉不需要的部分从而得到最终产品。这样一来，前半句的逐层打印就很好理解了，普通打印机是把线堆积成面从而形成图像，3D打印则是把面（层）堆积成实体。</p>
+
+<p>同样类比于普通打印，把文本文件替换成数字模型文件，把纸替换成打印平台，把墨盒替换成3D打印耗材，我们就实现了3D打印。继续类比，普通打印机有三个动作，进纸（y轴）、喷头移动（X轴）和喷墨（物料输送），3D打印机也只不过在此基础之上多了一个z轴而已。</p>
+
+<h1 id="3d打印是不是什么都能打">3D打印是不是什么都能打？</h1>
+
+<p>并不是。首先3D打印的产物是实体，因此只有封闭模型才能被打印，一些场景模型和扫描模型是非封闭的，需要补面封闭后才能打印。由于3D打印是逐层进行的，因此当模型有悬空部分时，需要在下面打印疏松的支撑结构，而支撑位于封闭或半封闭空间的时候很难去除（比如鸟笼里鸟梁架的支撑），因此这类模型是无法打印的。由于材料强度限制，具有薄壁特征或是较细的柱状结构的模型也是难以打印的，强行打印也会在拆除支撑时不慎损毁薄壁和细柱。除此以外，由于热胀冷缩效应会导致层与层之间产生内应力，大面积的平面会极易出现翘边，即使有热床也很难避免，因此大面积板件不推荐打印而是直接切割。也正是内应力的存在，会导致层与层之间的结合相对不那么牢固可靠，大大降低法向的抗拉强度，同样一根立柱，竖放与横放打印出来的强度会有明显差异。</p>
+
+<p>相对应的，3D打印也有独到优势。首先3D打印很擅长“螺蛳壳里做道场”，即在封闭或半封闭空间内打印相对复杂的结构。</p>
+
+<p>其次，由于独特的成型原理，3D打印可以很轻松的制造复杂曲面（例如涡轮叶片）。同时，合理利用支撑可以打印免装配的可动零件。另一方面由于模型即产物的特点，3D打印很适合原型开发，可以让机械零件像代码一样快速迭代，缩短开发周期。</p>
+
+<h1 id="怎么实现3d打印">怎么实现3D打印？</h1>
+
+<p>正如前文提到的，3D打印的本质是逐层堆积，而逐层堆积的实现方式/原理有很多种。但是随着时间的检验，真正得以大规模应用的只有一部分，这里懒君就介绍几种比较主流的，分别是FDM（Fused Deposition Modeling，熔融沉积），SLA（Stereolithography，立体印刷术），SLS（Selective Laser Sintering，选择性激光烧结）。</p>
+
+<p>首先是FDM，我们继续用类比来理解。普通打印的耗材是墨汁，因为墨汁可以流动从而方便输送，也很容易和纸张（以及上面已有的墨迹）结合。而FDM打印机的耗材一般是塑料，而塑料是固体，因此需要多一个熔融的步骤使其变成流体，从而进行打印。也正是由于和普通打印机相类似的原理，FDM打印机是成本最低精度最低速度最慢同时也是民间最普及的（也是最适合萌新学习的）。这里值得一提的是，由于缺乏详细说明，很多人都觉得只要是能熔化的材料都可以采用FDM方式打印。事实上这里的熔融的潜台词就是要求耗材是非晶体，因为非晶体没有固定熔点，才能以一个相对粘稠的临界态进行打印。而晶体（例如很多沙雕群友脑补的焊锡），只有固态/液态，因此无法采用FDM方式打印。那么是不是FDM就无法打印金属了呢？当然不是，金属粉末与粘接剂混合制成的耗材是可以通过FDM方式打印的哟（想不到吧）！</p>
+
+<p>然后是SLA，由于它的耗材是光敏树脂，因此又被称作光固化技术。SLA的原理是通过一束激光扫描或是DLP（Digital Light Processing，数字光处理）投射的紫外光从而使目标区域的光敏树脂凝固，逐层进行从而实现3D打印。由于结构相对简单，仅包含数字光源（激光振镜组或是DMD微镜+透镜组），材料池和升降平台，成型速度快（想象一下硒鼓打印和喷墨打印的区别），精度高（主要取决于光源精度），因此也是最先工业化的。由于数字光源成本高昂加之光敏树脂具有一定的毒性，SLA打印机普及度相对较低，但是由于DLP技术广泛应用于投影仪，因此采用廉价投影仪更换紫外光源的DIY光固化打印机也深受创客欢迎。</p>
+
+<p>最后就是SLS，唯一支持金属直接打印的方案，也是唯一无需打印支撑结构的方案，真正配得上工业革命这一称号的终极方案。耗材通常为陶瓷粉末，金属粉末和高分子粉末。事实上从选择性激光烧结这一命名，就可以推断出它的原理是通过激光产生高温，选择性的烧结目标区域的耗材粉末，逐层铺洒压实粉末并进行烧结最终得到实体。在这一过程中粉末替代了支撑结构因此无需支撑。这一技术的最大优势是无需模具就可以直接制造出表面粗糙度较好、尺寸精度较高和致密性接近100%，具有冶金性质的金属零件，再加上前文提到的3D打印的固有优势，SLS很适合用于航空航天这种非量产场合。</p>
+
+<h1 id="结语">结语</h1>
+
+<p>能说的都说的差不多了，以上基本就是3D打印的所有理论知识，至于打印机架构和建模，之后会出视频或者文章详细说。（提前咕咕咕）<br />
+完结撒花！</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://mechmallow.github.io/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/" title="3D打印技术简介" target="_blank" rel="external">https://mechmallow.github.io/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Mechmallow" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://mechmallow.github.io/mechmallow/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Mechmallow" target="_blank"><span class="text-dark">雪落霞初</span><small class="ml-1x">祝大家摸得透彻</small></a></h3>
+        <div>不太有趣，不太乐观</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://mechmallow.github.io/mechmallow/2016/09/000%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="使用Hugo快速搭建博客"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://mechmallow.github.io/mechmallow/2016/11/002%E4%B8%BB%E6%B5%813d%E6%89%93%E5%8D%B0%E6%9C%BA%E7%BB%93%E6%9E%84/"
+                    title="主流3D打印机结构"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        
+        <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal"
+            data-target="#donateModal"><span>赏</span></button>
+        
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content donate">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+                <div class="donate-box">
+                    <div class="donate-head">
+                        <p>感谢您的支持,我会继续努力的!</p>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+                            <div class="donate-payimg">
+                                <img src="https://mechmallow.github.io/mechmallow/donate/alipayimg.png"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦~</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+                            <div class="donate-payimg">
+                                <img src="https://mechmallow.github.io/mechmallow/donate/wechatpayimg.png"
+                                    alt="扫码支持" title="扫一扫" />
+                            </div>
+                            <p class="text-muted mv">扫码打赏, 多少你说了算~</p>
+                            <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+                        </div>
+                    </div>
+                    <div class="donate-footer">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay"
+                                    aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab"
+                                    aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i>
+                                    微信支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/Mechmallow" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://mechmallow.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2015  -
+    2022
+    <div class="publishby">
+         Design by<a href="https://github.com/mechmallow" target="_blank"> Mechmallow </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> Hugo-pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+   window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/rust.min.js"></script>
+<script type="text/javascript"
+   src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script>
+hljs.configure({
+  tabReplace: '    ', 
+  classPrefix: ''     
+                      
+})
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="https://mechmallow.github.io/mechmallow/js/application.js"></script>
+<script type="text/javascript" src="https://mechmallow.github.io/mechmallow/js/plugin.js"></script>
+<script>
+      (function (window) {
+          var INSIGHT_CONFIG = {
+              TRANSLATION: {
+                  POSTS: '文章',
+                  PAGES: '页面',
+                  CATEGORIES: '分类',
+                  TAGS: '标签',
+                  UNTITLED: '(未命名)',
+              },
+              ROOT_URL: 'https:\/\/mechmallow.github.io\/mechmallow',
+              CONTENT_URL: 'https:\/\/mechmallow.github.io\/mechmallow\/searchindex.json ',
+          };
+          window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+      })(window);
+      </script>
+<script type="text/javascript" src="https://mechmallow.github.io/mechmallow/js/insight.js"></script>
+
+
+  </body>
+</html>

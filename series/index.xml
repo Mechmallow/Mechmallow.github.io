@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on 雪落霞初</title>
+    <link>https://mechmallow.github.io/mechmallow/series/</link>
+    <description>Recent content in Series on 雪落霞初</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+        <atom:link href="https://mechmallow.github.io/mechmallow/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geek网站推荐</title>
+      <link>https://mechmallow.github.io/mechmallow/2020/03/015geek%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Tue, 17 Mar 2020 15:53:30 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2020/03/015geek%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</guid>
+      <description>前言 点开收藏夹发现已经超过4000条了（互联网仓鼠党），刚好群里有人求资源，索性把常用的Geek站点整理一下做个汇总。 硬件 先说硬件开发吧，毕</description>
+    </item>
+    
+    <item>
+      <title>在线/轻量级工具推荐【不定期更新】</title>
+      <link>https://mechmallow.github.io/mechmallow/2020/02/013%E5%AE%9E%E7%94%A8%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Thu, 13 Feb 2020 01:22:35 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2020/02/013%E5%AE%9E%E7%94%A8%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</guid>
+      <description>在线工具/轻量级应用 前言 最近入手了一台2014款ThinkPad X1 Carbon。不得不说ThinkPad的使用体验非常优秀，美中不足的是CP</description>
+    </item>
+    
+    <item>
+      <title>DIY自己专属的键盘</title>
+      <link>https://mechmallow.github.io/mechmallow/2019/11/012diy%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/</link>
+      <pubDate>Wed, 13 Nov 2019 01:34:25 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2019/11/012diy%E5%AE%A2%E5%88%B6%E5%8C%96%E9%94%AE%E7%9B%98/</guid>
+      <description>前言 工欲善其事，必先利其器。在刚上大学的时候正好赶上机械键盘的热潮，当时机械键盘刚刚兴起，价格也相对昂贵，基本上在一个轴一块的水平。由于囊中</description>
+    </item>
+    
+    <item>
+      <title>抽卡沉船引起的一些思考</title>
+      <link>https://mechmallow.github.io/mechmallow/2019/07/011%E6%96%AF%E9%87%91%E7%BA%B3%E8%80%81%E9%BC%A0%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Mon, 15 Jul 2019 02:33:44 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2019/07/011%E6%96%AF%E9%87%91%E7%BA%B3%E8%80%81%E9%BC%A0%E7%90%86%E8%AE%BA/</guid>
+      <description>抽卡沉船引起的一些思考 开门见山 塔防手游《明日方舟》19年5月开始公测，我就是那个时候入坑的。和其他日系抽卡手游一样，角色是要概率抽取的，六星</description>
+    </item>
+    
+    <item>
+      <title>Magisk从入坑到变砖</title>
+      <link>https://mechmallow.github.io/mechmallow/2018/10/010magisk%E6%95%99%E7%A8%8B%E5%90%88%E9%9B%86/</link>
+      <pubDate>Sat, 13 Oct 2018 02:33:44 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2018/10/010magisk%E6%95%99%E7%A8%8B%E5%90%88%E9%9B%86/</guid>
+      <description>Magisk从入坑到变砖 前言 手机作为最常用的工具在生活中的地位极其重要，而衡量工具好坏的一个重要标准就是是否趁手。苹果由于其封闭的系统生态，</description>
+    </item>
+    
+    <item>
+      <title>M1加密卡破解</title>
+      <link>https://mechmallow.github.io/mechmallow/2018/04/008m1%E5%8A%A0%E5%AF%86%E5%8D%A1%E7%A0%B4%E8%A7%A3/</link>
+      <pubDate>Fri, 13 Apr 2018 02:01:14 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2018/04/008m1%E5%8A%A0%E5%AF%86%E5%8D%A1%E7%A0%B4%E8%A7%A3/</guid>
+      <description>M1加密卡破解 这一篇只会简单说一下常见的破解手段，具体如何操作就不说了免得被查水表。 暴力破解 暴力破解是破解工作永远的话题，只要你拥有庞大的计</description>
+    </item>
+    
+    <item>
+      <title>深入了解M1加密卡</title>
+      <link>https://mechmallow.github.io/mechmallow/2018/03/007m1%E5%8A%A0%E5%AF%86%E5%8D%A1%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sat, 03 Mar 2018 04:12:15 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2018/03/007m1%E5%8A%A0%E5%AF%86%E5%8D%A1%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6/</guid>
+      <description>前言 不知不觉就鸽了好几个月，主要还是过年事情太多了（其实主要是我懒）。 在上一篇中简单介绍了一下M1卡以及复制流程，但是，不加密的M1卡还是比</description>
+    </item>
+    
+    <item>
+      <title>手机NFC与M1卡折腾记录</title>
+      <link>https://mechmallow.github.io/mechmallow/2017/12/006nfc-m1/</link>
+      <pubDate>Mon, 18 Dec 2017 02:08:44 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2017/12/006nfc-m1/</guid>
+      <description>前言 提前声明，本人为遵纪守法的良民，这篇记录仅供研究之用。 学校的电子楼统一使用了一卡通门禁，但是配发给我们社团的实验室只允许录一个人的一卡通</description>
+    </item>
+    
+    <item>
+      <title>滤波算法汇总</title>
+      <link>https://mechmallow.github.io/mechmallow/2017/10/005%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 19 Oct 2017 03:03:34 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2017/10/005%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</guid>
+      <description>前言 谈到单片机必谈传感器，谈到传感器必谈滤波。 被滤波搞得焦头烂额的时候偶然在社区看到了这篇远古神贴，特此搬运以便后期查阅。 饮水不忘掘井人，这</description>
+    </item>
+    
+    <item>
+      <title>常见3D打印耗材</title>
+      <link>https://mechmallow.github.io/mechmallow/2017/02/003%E5%B8%B8%E8%A7%813d%E6%89%93%E5%8D%B0%E8%80%97%E6%9D%90/</link>
+      <pubDate>Mon, 06 Feb 2017 03:03:34 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2017/02/003%E5%B8%B8%E8%A7%813d%E6%89%93%E5%8D%B0%E8%80%97%E6%9D%90/</guid>
+      <description>前言 计划上这是3D打印系列的最后一篇了，不过之后可能还会再水一篇关于模型和支撑以及一些使用心得的番外。 言归正传，事实上，不论成型原理，目前3</description>
+    </item>
+    
+    <item>
+      <title>主流3D打印机结构</title>
+      <link>https://mechmallow.github.io/mechmallow/2016/11/002%E4%B8%BB%E6%B5%813d%E6%89%93%E5%8D%B0%E6%9C%BA%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Mon, 21 Nov 2016 03:02:30 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2016/11/002%E4%B8%BB%E6%B5%813d%E6%89%93%E5%8D%B0%E6%9C%BA%E7%BB%93%E6%9E%84/</guid>
+      <description>前言 在上一篇中简单说了一下3D打印机的原理，这一篇就介绍一下相对主流的3D打印机的结构。提前说明，价格昂贵难以DIY的SLS机型这里不会涉及</description>
+    </item>
+    
+    <item>
+      <title>3D打印技术简介</title>
+      <link>https://mechmallow.github.io/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/</link>
+      <pubDate>Fri, 11 Nov 2016 17:09:05 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2016/11/001%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B3d%E6%89%93%E5%8D%B0/</guid>
+      <description>前言 前段时间组了一台3D打印机。意外的发现尽管3D打印已经吹了这么多年，大多数人（即使是创客）对它也鲜有清晰的概念和认知。所以随手写这么一篇</description>
+    </item>
+    
+    <item>
+      <title>使用Hugo快速搭建博客</title>
+      <link>https://mechmallow.github.io/mechmallow/2016/09/000%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 02 Sep 2016 03:03:34 +0800</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/2016/09/000%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>前言 首先明确一下Hugo是什么。 Hugo是一个用Go语言编写的静态站点生成器，具有丰富的主题和极快的的生成速度。在下就是因为用Hexo觉得越</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mechmallow.github.io/mechmallow/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mechmallow.github.io/mechmallow/about/</guid>
+      <description>联系方式 手机：18851891921（微信同号） Email：deng0x00@live.com QQ：910541770 个人信息 邓子晗/男/1</description>
+    </item>
+    
+  </channel>
+</rss>
